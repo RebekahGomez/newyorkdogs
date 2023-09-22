@@ -16,7 +16,7 @@ body, html {
 
 .navbar h1 {
   font-family: 'Pacifico', cursive;
-  font-size: 3rem;
+  font-size: 4rem;
   color: #ffffff;
   margin: 0; /* Remove the default margin from h1 */
   margin-bottom: 5px; /* Add some margin between the title and the links */
@@ -36,4 +36,18 @@ body, html {
 
 .links a:hover {
   color: #ffd700;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .navbar h1 {
+    font-size: 2rem; /* Adjusted font size for smaller screens */
+  }
+
+  .links {
+    font-size: 0.8rem; /* Adjusted font size for smaller screens */
+  }
 }

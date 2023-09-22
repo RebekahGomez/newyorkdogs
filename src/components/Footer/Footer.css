@@ -1,0 +1,33 @@
+/* Footer.css */
+
+.footer {
+  background-color: #ff8c00; /* Same color as Navbar */
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1); /* Shadow on top */
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffd700; /* Similar hover effect as the links in Navbar */
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 5px;
+  }
+
+  .footer p {
+    font-size: 0.8rem; /* Adjusted font size for smaller screens */
+  }
+}
