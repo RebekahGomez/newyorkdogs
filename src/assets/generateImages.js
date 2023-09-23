@@ -17,6 +17,12 @@ const imageFiles = fs
   .readdirSync(imagesDir)
   .filter((file) => file.endsWith(".jpg"));
 
+// Create a Set of image paths that currently exist in the directory
+const currentImagePaths = new Set(imageFiles.map((file) => `/images/${file}`));
+
+// Filter jsonData to keep only entries whose paths exist in currentImagePaths
+jsonData = jsonData.filter((entry) => currentImagePaths.has(entry.path));
+
 // Iterate over the image files and prepend new entries to the JSON data array
 imageFiles.forEach((file) => {
   const imagePath = `/images/${file}`; // The path is relative to the public directory
