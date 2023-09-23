@@ -26,7 +26,7 @@ const ImageGallery = () => {
   return (
     <div className="image-gallery">
       {images.map((image) => (
-        <img src={image.path} alt="" key={image.path} />
+        <img src={image.path} alt="" key={image.id} />
       ))}
     </div>
   );

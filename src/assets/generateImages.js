@@ -26,9 +26,12 @@ jsonData = jsonData.filter((entry) => currentImagePaths.has(entry.path));
 // Iterate over the image files and prepend new entries to the JSON data array
 imageFiles.forEach((file) => {
   const imagePath = `/images/${file}`; // The path is relative to the public directory
+  const id = file.split(".").shift(); // Use the filename without extension as the id
   if (!jsonData.some((entry) => entry.path === imagePath)) {
     jsonData.unshift({
+      id,
       path: imagePath,
+      tags: [],
       // Add any other metadata fields you need
     });
   }
