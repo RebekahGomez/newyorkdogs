@@ -1,0 +1,18 @@
+/* AllDogs.css */
+
+/* Container for the image grid */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; 
+  padding: 16px; 
+  justify-content: center; 
+}
+
+/* Style each image */
+.image-gallery img {
+  object-fit: cover;
+  width: 200px; 
+  height: 200px; 
+  border-radius: 8px; 
+}
