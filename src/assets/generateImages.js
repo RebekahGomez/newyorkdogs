@@ -31,6 +31,7 @@ imageFiles.forEach((file) => {
     jsonData.unshift({
       id,
       path: imagePath,
+      comment: "",
       tags: [],
       // Add any other metadata fields you need
     });
