@@ -5,7 +5,10 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <h1>Dogs of New York</h1>
-      <div className="links">Links to tags will go here</div>
+      <div className="links">
+        Welcome! This is a Work In Paw-ject! Enjoy all these good dogs spotted
+        in NYC as I gradually build out this site.
+      </div>
     </nav>
   );
 };

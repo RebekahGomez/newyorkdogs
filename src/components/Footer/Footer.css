@@ -4,7 +4,8 @@
   background-color: #ff8c00; /* Same color as Navbar */
   color: #ffffff;
   text-align: center;
-  padding: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   position: sticky;
   left: 0;
   bottom: 0;
@@ -15,7 +16,7 @@
 .footer a {
   color: #ffffff;
   text-decoration: underline;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 .footer a:hover {
