@@ -43,6 +43,21 @@ img {
   background-color: rgb(193, 9, 9);
 }
 
+.modal-nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-nav-button.previous {
+  left: 10px;
+}
+
+/* Position the next button on the right */
+.modal-nav-button.next {
+  right: 10px;
+}
+
 @media (max-width: 480px) {
   .modal-content {
     width: 90%;  
