@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import DogModal from "../DogModal/DogModal.js";
+import DogModal from "../DogModal/dogModal.js";
 import "./AllDogs.css";
 
 const ImageGallery = () => {
@@ -26,6 +26,7 @@ const ImageGallery = () => {
   }, []);
 
   const handleImageClick = (image) => {
+    console.log("Image clicked:", image);
     setSelectedImage(image);
   };
 
