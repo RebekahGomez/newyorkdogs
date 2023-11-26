@@ -26,7 +26,6 @@ const ImageGallery = () => {
   }, []);
 
   const handleImageClick = (image) => {
-    console.log("Image clicked:", image);
     setSelectedImage(image);
   };
 
