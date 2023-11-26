@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import DogModal from "../DogModal/DogModal.js";
 import "./AllDogs.css";
 
 const ImageGallery = () => {
   const [images, setImages] = useState([]);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
     // Define a function to fetch images from the JSON file
@@ -23,11 +25,28 @@ const ImageGallery = () => {
     fetchImages();
   }, []);
 
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
-    <div className="image-gallery">
-      {images.map((image) => (
-        <img src={image.path} alt="" key={image.id} loading="lazy" />
-      ))}
+    <div>
+      <div className="image-gallery">
+        {images.map((image) => (
+          <img
+            src={image.path}
+            alt=""
+            key={image.id}
+            loading="lazy"
+            onClick={() => handleImageClick(image)}
+          />
+        ))}
+      </div>
+      <DogModal image={selectedImage} onClose={handleCloseModal} />
     </div>
   );
 };
