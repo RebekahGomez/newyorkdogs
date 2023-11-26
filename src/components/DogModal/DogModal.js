@@ -6,18 +6,19 @@ const DogModal = ({ image, onClose, onNext, onPrevious }) => {
 
   return (
     <div className="modal-backdrop">
+      <button onClick={onPrevious} className="modal-nav-button previous">
+        {"<"}
+      </button>
+
       <div className="modal-content">
         <img src={image.path} alt="" />
         <button onClick={onClose} className="modal-close-button">
           Close
         </button>
-        <button onClick={onPrevious} className="modal-nav-button previous">
-          Back
-        </button>
-        <button onClick={onNext} className="modal-nav-button next">
-          Next
-        </button>
       </div>
+      <button onClick={onNext} className="modal-nav-button next">
+        {">"}
+      </button>
     </div>
   );
 };

@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 30px;
   z-index: 1000;
   overflow-y: auto;
 }
@@ -21,6 +22,7 @@
   max-height: 90vh;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   overflow-y: auto;
+  flex-shrink: 0;
 }
 
 img {
@@ -44,19 +46,11 @@ img {
 }
 
 .modal-nav-button {
-  position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1010;
 }
 
-.modal-nav-button.previous {
-  left: 10px;
-}
-
-/* Position the next button on the right */
-.modal-nav-button.next {
-  right: 10px;
-}
 
 @media (max-width: 480px) {
   .modal-content {
