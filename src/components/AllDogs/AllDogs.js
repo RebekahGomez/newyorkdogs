@@ -27,10 +27,12 @@ const ImageGallery = () => {
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
+    document.body.style.overflow = "hidden";
   };
 
   const handleCloseModal = () => {
     setSelectedImage(null);
+    document.body.style.overflow = "auto";
   };
 
   return (
