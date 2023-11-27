@@ -1,4 +1,3 @@
-/* Navbar.css */
 
 body, html {
   margin: 0;
@@ -23,6 +22,7 @@ body, html {
 }
 
 .links {
+  text-align: center;
   color: #ffffff;
   font-size: 1rem;
 }
