@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import DogModal from "../DogModal/dogModal.js";
+import DogModal from "../DogModal/DogModal.js";
 import "./AllDogs.css";
 
 const ImageGallery = () => {
